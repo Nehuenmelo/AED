@@ -10,13 +10,13 @@ int main()
     std::cout<<"El club "<<nombre<<" tiene "<<puntos<<" puntos.\n";
     std::cout<<"Su promedio es "<<promedio<<".\n";
 
-
-	copaLib = puntos >= 41;
-	if(copaLib==true)
-    {
-        std::cout<<"Esta clasificado a la copa Libertadores.";
-
-        }else{
+	
+if(puntos >= 41){
+	copaLib = true;
+        std::cout<<"Esta clasificado a la Copa Libertadores.";
+	}
+	else{
+	copaLib = false;
             std::cout<<"No esta clasificado a la Copa Libertadores";
-    }
+    	}
 }
